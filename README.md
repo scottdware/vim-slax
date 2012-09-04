@@ -5,4 +5,4 @@ in Juniper Junos devices.
 
 ### Installation
 
-Just copy the `ftdetect` and `syntax` folders to you vim installation folder and you're all set!
+Just copy the `ftdetect` and `syntax` folders to your vim installation folder and you're all set!
