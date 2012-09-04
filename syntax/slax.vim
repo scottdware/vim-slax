@@ -30,7 +30,7 @@ syn match slaxLangVar           "\$\<[-_a-zA-Z0-9]*\>"
 syn region slaxLangXmlString    contained start='"' end='"'
 syn region slaxLangXmlString    contained start="'" end="'"
 syn region slaxLangXml          matchgroup=slaxLangXml start="<[^ /!?<>"'=&.]" matchgroup=slaxLangXml end=">" contains=slaxLangXmlString
-syn region slaxLangXpath        matchgroup=slaxLangXpath start="\[[^ /!?<>"'=&.]" matchgroup=slaxLangXpath end="\]" contains=slaxLangXmlString
+syn region slaxLangXpath        matchgroup=slaxLangXpath start="\[[^ /!?<>"'=&\.0-9]" matchgroup=slaxLangXpath end="\]" contains=slaxLangXmlString
 
 hi link slaxLangKeywords        Statement
 hi link slaxLangFunctions       Function
