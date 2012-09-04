@@ -26,9 +26,9 @@ syn match slaxLangComment       "^\s*\/\*.*"
 syn match slaxLangComment       "^\s*\*.*"
 syn match slaxLangComment       "^\s*\*\/"
 syn match slaxLangString        "\"[^"]*\""
-syn match slaxLangVar           "\$\<[-a-zA-Z0-9]*\>"
+syn match slaxLangVar           "\$\<[-_a-zA-Z0-9]*\>"
 syn region slaxLangXmlString    contained start='"' end='"'
-syn region slaxLangXml          matchgroup=slaxLangXml start="<[^ /!?<>"']\@=" matchgroup=slaxLangXml end=">" contains=slaxLangXmlString
+syn region slaxLangXml          matchgroup=slaxLangXml start="<[^ /!?<>"'=&.]" matchgroup=slaxLangXml end=">" contains=slaxLangXmlString
 
 hi link slaxLangKeywords        Statement
 hi link slaxLangFunctions       Function
