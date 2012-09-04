@@ -27,6 +27,8 @@ syn match slaxLangComment       "^\s*\*.*"
 syn match slaxLangComment       "^\s*\*\/"
 syn match slaxLangString        "\"[^"]*\""
 syn match slaxLangVar           "\$\<[-a-zA-Z0-9]*\>"
+syn region slaxLangXmlString    contained start='"' end='"'
+syn region slaxLangXml          matchgroup=slaxLangXml start="<[^ /!?<>"']\@=" matchgroup=slaxLangXml end=">" contains=slaxLangXmlString
 
 hi link slaxLangKeywords        Statement
 hi link slaxLangFunctions       Function
@@ -34,5 +36,7 @@ hi link slaxLangCond            Conditional
 hi link slaxLangComment         Comment
 hi link slaxLangString          String
 hi link slaxLangVar             Identifier
+hi link slaxLangXml             Type
+hi link slaxLangXmlString       String
 
 let b:current_syntax = "slax"
