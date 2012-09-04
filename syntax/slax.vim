@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: Slax
-" Maintainer: Scott Ware
-" Latest Revision: 2 September 2012
+" Maintainer: Scott Ware <scottdware@gmail.com>
+" Latest Revision: 4 September 2012
 
 if exists("b:current_syntax")
     finish
