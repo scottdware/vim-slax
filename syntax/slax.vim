@@ -9,10 +9,11 @@ endif
 
 setlocal iskeyword+=-
 
-syn keyword slaxLangCond        if else for-each
+syn keyword slaxLangCond        if else for for-each while
 
-syn keyword slaxLangKeywords    apply-templates call comment copy-of expr import include match
-syn keyword slaxLangKeywords    mode ns param preserve-space priority strip-space template terminate var version with
+syn keyword slaxLangKeywords    apply-templates call comment copy-of decimal-format expr function import
+syn keyword slaxLangKeywords    message include key match mode mvar ns output-method param preserve-space priority
+syn keyword slaxLangKeywords    result strip-space template terminate trace var version with
 syn match slaxLangKeywords      "contains"
 
 syn keyword slaxLangFunctions   boolean ceiling concat count current document element-available
