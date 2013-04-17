@@ -1,4 +1,4 @@
-# Disable LF normalization for all files
+# LF normalization for all files
 * text=auto
 *.jpg=binary
 *.png=binary
